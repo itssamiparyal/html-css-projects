@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:#f8f5f2;
+    color: #333333;
+}
+
+header{
+    background-color: #1e3a5f;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e63946;
+}
+
+.restaurant-name a{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.restaurant-name a:hover{
+    font-size: 45px;
+    color: #e63946;
+}
+
+.restaurant-tagline{
+    font-size: 20px;
+}
+
+main{
+ margin: 20px;
+ display: flex;
+ gap: 40px;   
+}
+
+.leftside{
+    animation: slideright 1s;
+}
+
+.rightside{
+    animation: slideleft 1s;
+}
+.leftside,.rightside{
+    flex: 1;
+}
+
+.Menu h2{
+    color: #e63946;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.menu-item p{
+    margin: 0;
+    font-size: 18px;
+    padding-left: 20px;
+    
+}
+.price{
+    color:#e63946;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+ 
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+i:hover{
+    color: #e63946;
+    font-size: 1.1em;
+}
+
+/* animations */
+
+@keyframes slideleft {
+    from{transform: translateX(50%); opacity: 0;}
+}
+
+@keyframes slideright {
+    from{transform: translateX(-50%); opacity: 0;}
+}
